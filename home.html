@@ -38,19 +38,19 @@
   <h2>
     <font color="#005128">Project Title: </font>
     <font>
-      <font color="#005128">[Your Project Title]</font>
+      <font color="#005128">Reimplement and Analyse of Stepping Algorithms for Parallel Shortest Paths</font>
     </font>
   </h2>
 
   <h2>
     <font>
-      <font color="#005128">Name: [Your Name]</font>
+      <font color="#005128">Name: Tian Xia</font>
     </font>
   </h2>
 
   <h2>
     <font>
-      <font color="#005128">E-Mail: [Your E-Mail]</font>
+      <font color="#005128">E-Mail: txia102@uottawa.ca</font>
     </font>
   </h2>
 
@@ -59,12 +59,33 @@
   <hr noshade="noshade">
   <b>
     <font color="#005128">Project Outline:</font>
-  </b> [at most
-  1/2 page outline of what you intend to do]
+  </b> SSSP(single-source shortest path problem) is well-known graph algorithms, which has been proved can be
+  implemented with time complexity O(nlogn + m) on a graph with n nodes and m edges using the well-known Dijkstra
+  algorithm.
+  As for the Parallel version of SSSP algorithms, the &#916-stepping algorithm and the Radius-stepping algorithm are two
+  work-efficient solutions for this problem. However, both of these 2 algorithms have their problem. The &#916-stepping
+  algorithm can not find the worst-case bound on general graphs, whereas, the Radius-stepping doesn't have any efficient
+  implementation available. So this paper described a new stepping algorithm framework, and a new data structure called
+  lazy-batched priority queue (LaB-PQ ) to implement a better version of parallel SSSP algorithm with non-trivial
+  worst-case bounds.
   <p><b>
       <font color="#005128">Startup Paper(s):</font>
-    </b> [list your
-    startup paper(s) and include a link to the PDF file]</p>
+    </b> </br>
+
+    <a href="https://dl.acm.org/doi/pdf/10.1145/3409964.3461782">
+      <font color="#000000">Efficient Stepping Algorithms and Implementations for Parallel Shortest Paths
+      </font>
+    </a><b>(Main)</b></br>
+    <a href="https://dl-acm-org.proxy.library.carleton.ca/doi/pdf/10.1145/2935764.2935765">
+      <font color="#000000">Parallel Shortest Paths Using Radius Stepping</font>
+    </a></br>
+
+    <a href="https://www.sciencedirect.com/science/article/pii/S0196677403000762">
+      <font color="#000000">&#916-stepping: a parallelizable shortest path algorithm</font>
+    </a></br>
+
+
+  </p>
 
   <p><b>
       <font color="#005128">Deliverables:</font>
