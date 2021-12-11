@@ -1,0 +1,18 @@
+bazel run //utils:snap_converter -- -s -i /home/xtstc131/datasets/com-amazon.ungraph.txt -o /home/xtstc131/datasets/com-amazon.adj   
+
+./sssp -i /home/xtstc131/datasets/Wiki-Vote.adj -v -p 200000 -a rho-stepping 
+./sssp -i /home/xtstc131/datasets/web-Stanford.adj -v -p 200000 -a rho-stepping
+./sssp -i /home/xtstc131/datasets/com-amazon.adj -v -p 200000 -a rho-stepping 
+
+
+
+
+./sssp -i /home/xtstc131/datasets/Wiki-Vote.adj   -a delta-stepping 
+./sssp -i /home/xtstc131/datasets/web-Stanford.adj   -a delta-stepping
+./sssp -i /home/xtstc131/datasets/com-amazon.adj  -a delta-stepping 
+
+./sssp -i /home/xtstc131/datasets/com-orkut.ungraph.txt/com-orkut.ungraph.adj  -p 200000 -a delta-stepping 
+
+./sssp -i /home/xtstc131/datasets/Wiki-Vote.adj -v  -a bellman-ford
+./sssp -i /home/xtstc131/datasets/web-Stanford.adj -v  -a bellman-ford
+./sssp -i /home/xtstc131/datasets/com-amazon.adj  -v -a bellman-ford 
