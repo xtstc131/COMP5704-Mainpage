@@ -8,20 +8,6 @@ This repository includes the implmentation of $\rho$-stepping, $\Delta$\*-steppi
 ### Prerequisites 
 * g++ &gt;= 5.3.0 with support for Cilk Plus 
 
-### Setting up 
-Clone the library with submodule 
-```shell
-git clone --recurse-submodules https://github.com/ucrparlay/Parallel-SSSP.git 
-cd Parallel-SSSP/ 
-```
-
-Alternatively, you can first clone it and add the submodule 
-```shell
-git clone https://github.com/ucrparlay/Parallel-SSSP.git 
-git submodule update --init --recursive 
-cd Parallel-SSSP/ 
-```
-
 ### Building
 A makefile is given in the repository, you can compile the code by: 
 ```shell
@@ -48,6 +34,5 @@ $\rho$=2000000, and use Dijkstra's algorithm to verify the result after the test
 
 ## Reference 
 X. Dong, Y. Gu, Y. Sun, and Y. Zhang. Efficient Stepping Algorithms and Implementations for Parallel Shortest Paths. In *ACM Symposium on Parallelism in Algorithms and Architectures (SPAA)*, 2021. 
-To appear. 
 
 X. Dong, Y. Gu, Y. Sun, and Y. Zhang. [Efficient Stepping Algorithms and Implementations for Parallel Shortest Paths.](https://arxiv.org/abs/2105.06145) *arXiv preprint 2105.06145*, 2021. 
